@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>formulario de pedidos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <header> 
+            <div class="contMenu">
+                <!--Realizar panel lateral desplegable con información de usuario, menu{centro de ayuda, mensajería, promociones y contacto} botón cerrar sesión -->
+                <!--Realizado por LuisGmom, plantillas hechas sin diseño responsive sin logica de JS solo con estilos de CSS-->
+                <!--<img src="" alt="Logo" Class="LogoHeader">-->
+                <nav class="menu_principal">
+                    <ul class="navList">
+                        <li><img src="assets/img/home/home_48x48.png" alt="" style="display: block;"><a href="index.html" alt="pagina de inicio" >Home</a></li>
+                        <li><img src="assets/img/promo/promo-stamp-png_48x48.png" alt="" style="display: block;"><a href="promos.html" alt="pagina de promociones">Promos</a></li>
+                        <li><img src="assets/img/fav/fav_48x48.png" alt="" style="display: block;"><a href="#" alt="pagina de carrito de compras">favoritos</a></li>
+                        <li><img src="assets/img/contact/contact_48x48.png" alt="" style="display: block;"><a href="contacto.html" alt="Contact">Contacto</a></li>
+                    </ul>
+                </nav>
+                <nav class="buttsession">
+                    <ul Class="navRegister">
+                        <li><img src="assets/img/login/login_48x48.png" alt=""><a href="" alt="" style="display: block;">Login/Register</a></li>
+                        <li><img src="assets/img/cart/cart_48x48.png" alt=""><a href="" alt="" style="display: block;">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="cart">
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button onclick="getSession();">Get</button>
+                <button onclick="carrito();">Cart</button>
+                <div id="carr">
+                    
+                </div>
+            </aside>
+        </section>
+        <section Class="title">
+            <div>
+                <h2>Horario de atención: Lunes a Viernes 7:30am a 5:00pm</h2>
+            </div>
+        </section>
+        <section class="producto_formulario">
+            <!--<div class="imgform">
+                <img src="Imagenes/Contact Us/Contact-US.jpg" alt="Contact Label";>
+            </div> 
+            <div>  
+                <form class="formcli">
+                    <fieldset>
+                            <div>
+                                <label for="name">Name:</label><br />
+                                <input type="text" placeholder="Enter your name" name="name" id="name"><br />
+                            </div>
+                            <div>
+                                <label for="phone">Phone: </label><br />
+                                <input type="tel" placeholder="Enter your phone" name="phone" id="phone"><br />
+                            </div>
+                            <div>
+                                <label for="email">Email: </label><br />
+                                <input type="email" placeholder="Enter your email" name="email" id="email"><br />
+                            </div>
+                            <div>
+                            <label for="subject">Subject</label><br />
+                            <textarea type="text" placeholder="Subject" name="Subject" id="Subject"> </textarea><br />
+                            </div>
+                        <input type="button" value="Send">
+                    </fieldset>
+                </form>
+            </div>-->
+        </section>
+        <section id="product">
+
+        </section>
+        <footer>
+            <section>
+                <div class="important-links">
+                    <h2>Important Links</h2>
+                        <ul>
+                            <li>
+                                <a href="">terms and conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Schedule</a>
+                            </li>
+                            <li>
+                                <a href="">How to place an order </a>
+                            </li>
+                            <li>
+                                <a href="">Refund or refund</a>
+                            </li>
+                        </ul>
+                </div>
+                <div Class="cont-contact-links">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    <p></p>
+                </div>
+            </section>
+        </footer>
+        <script src="js/fetch_product.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
+
+</html>

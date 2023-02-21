@@ -1,0 +1,105 @@
+{
+    "Productos":"Productos Macrobioticos",
+    "Categoria":"Phytos",
+    "TotalNatural":[
+            {
+        "id":"1001",
+        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "marca":"Xiaomy",
+        "modelo":"Redmi",
+        "precio":"₡ 12000",
+        "color":"Negro/Azul/Verde"
+        },
+            {
+        "id":"1002",
+        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "marca":"Xiaomy",
+        "modelo":"Redmi",
+        "precio":"₡ 12000",
+        "color":"Negro/Azul/Verde"
+        },
+            {
+        "id":"1003",
+        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "marca":"Xiaomy",
+        "modelo":"Redmi",
+        "precio":"₡ 12000",
+        "color":"Negro/Azul/Verde"
+        },
+            {
+        "id":"1004",
+        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "marca":"Xiaomy",
+        "modelo":"Redmi",
+        "precio":"₡ 12000",
+        "color":"Negro/Azul/Verde"
+        },
+            {
+        "id":"1005",
+        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "marca":"Xiaomy",
+        "modelo":"Redmi",
+        "precio":"₡ 12000",
+        "color":"Negro/Azul/Verde"
+        },
+            {
+        "id":"1006",
+        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "marca":"Xiaomy",
+        "modelo":"Redmi",
+        "precio":"₡ 12000",
+        "color":"Negro/Azul/Verde"
+        }
+    ],
+    "BioActive":[
+                {
+            "id":"1101",
+            "image":"https://th.bing.com/th/id/OIP.CJH2zrnhzqd44G6_YgtaBwHaHa?pid=ImgDet&rs=1",
+            "marca":"Samsung",
+            "modelo":"S22",
+            "precio":"₡ 12000",
+            "color":"Negro/Azul/Verde"
+            },
+                {
+            "id":"1102",
+            "image":"https://th.bing.com/th/id/OIP.CJH2zrnhzqd44G6_YgtaBwHaHa?pid=ImgDet&rs=1",
+            "marca":"Samsung",
+            "modelo":"S22",
+            "precio":"₡ 12000",
+            "color":"Negro/Azul/Verde"
+            },
+                {
+            "id":"1103",
+            "image":"https://th.bing.com/th/id/OIP.CJH2zrnhzqd44G6_YgtaBwHaHa?pid=ImgDet&rs=1",
+            "marca":"Samsung",
+            "modelo":"S22",
+            "precio":"₡ 12000",
+            "color":"Negro/Azul/Verde"
+            },
+                {
+            "id":"1104",
+            "image":"https://th.bing.com/th/id/OIP.CJH2zrnhzqd44G6_YgtaBwHaHa?pid=ImgDet&rs=1",
+            "marca":"Samsung",
+            "modelo":"S22",
+            "precio":"₡ 12000",
+            "color":"Negro/Azul/Verde"
+            },
+                {
+            "id":"1105",
+            "image":"https://th.bing.com/th/id/OIP.CJH2zrnhzqd44G6_YgtaBwHaHa?pid=ImgDet&rs=1",
+            "marca":"Samsung",
+            "modelo":"S22",
+            "precio":"₡ 12000",
+            "color":"Negro/Azul/Verde"
+            },
+                {
+            "id":"1106",
+            "image":"https://th.bing.com/th/id/OIP.CJH2zrnhzqd44G6_YgtaBwHaHa?pid=ImgDet&rs=1",
+            "marca":"Samsung",
+            "modelo":"S22",
+            "precio":"₡ 12000",
+            "color":"Negro/Azul/Verde"
+            }
+        ]
+    
+}
