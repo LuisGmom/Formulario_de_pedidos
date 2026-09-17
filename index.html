@@ -1,116 +1,151 @@
 <!doctype html>
 <html lang="es">
     <head>
-        <title>formulario de pedidos</title>
+        <meta property="og:title" content="AstroTech, tecnología a su alcance">
+        <meta name="og:description" content="AstroTech la mejor tecnologia a su alcance, mejor relación de precio y calidad del mercado">
+        <meta name="robots" content="index, follow">
+        <title>Tienda AstroTech | tecnología a su alcance</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <script src="https://kit.fontawesome.com/9cc0912742.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
         <header> 
             <div class="contMenu">
-                <!--Realizar panel lateral desplegable con información de usuario, menu{centro de ayuda, mensajería, promociones y contacto} botón cerrar sesión -->
+                <!--Realizar panel lateral desplegable con información de usuario, menu{centro de ayuda, mensajería, promociones y contacto botón cerrar sesión -->
                 <!--Realizado por LuisGmom, plantillas hechas sin diseño responsive sin logica de JS solo con estilos de CSS-->
                 <!--<img src="" alt="Logo" Class="LogoHeader">-->
                 <nav class="menu_principal">
                     <ul class="navList">
-                        <li><img src="assets/img/home/home_48x48.png" alt="" style="display: block;"><a href="index.html" alt="pagina de inicio" >Home</a></li>
-                        <li><img src="assets/img/promo/promo-stamp-png_48x48.png" alt="" style="display: block;"><a href="promos.html" alt="pagina de promociones">Promos</a></li>
-                        <li><img src="assets/img/fav/fav_48x48.png" alt="" style="display: block;"><a href="#" alt="pagina de carrito de compras">favoritos</a></li>
-                        <li><img src="assets/img/contact/contact_48x48.png" alt="" style="display: block;"><a href="contacto.html" alt="Contact">Contacto</a></li>
+                        <li><a href="index.html" alt="pagina de inicio"> <i class="fa-solid fa-globe" style="padding-right: 5px;"></i>Home</a></li>
+                        <li><a href="promos.html" alt="pagina de promociones"> <i class="fa-solid fa-gift" padding-right: 5px;></i> Promos</a></li>
+                        <li><a href="#" alt="pagina de carrito de compras"><i class="fa-solid fa-star" style="padding-right: 5px;"></i>favoritos</a></li>
+                        <li><a href="contacto.html" alt="Contact"><i class="fa-solid fa-envelope" style="padding-right: 5px;"></i>Contacto</a></li>
                     </ul>
                 </nav>
                 <nav class="buttsession">
                     <ul Class="navRegister">
-                        <li><img src="assets/img/login/login_48x48.png" alt=""><a href="" alt="" style="display: block;">Login/Register</a></li>
-                        <li><img src="assets/img/cart/cart_48x48.png" alt=""><a href="" alt="" style="display: block;">Cart</a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-circle-user" style="padding-right: 5px;"></i>Login/Register</a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-cart-shopping" style="padding-right: 5px;"></i>Cart</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section class="cart">
-            <aside class="col-sm-4">
-                <h2>Carrito</h2>
-                <!-- Elementos del carrito -->
-                <ul id="carrito" class="list-group"></ul>
-                <hr>
-                <!-- Precio total -->
-                <p class="text-right">Total: <span id="total"></span>&euro;</p>
-                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                <button onclick="getSession();">Get</button>
-                <button onclick="carrito();">Cart</button>
-                <div id="carr">
-                    
-                </div>
-            </aside>
-        </section>
-        <section Class="title">
-            <div>
-                <h2>Horario de atención: Lunes a Viernes 7:30am a 5:00pm</h2>
+        <main class="my-4">
+            <div class="container">
+                <h1 class="text-center">Tienda de pedidos AstroTech</h1>
+                <section class="cart">
+                    <div class="container mb-4">
+                        <div class="col-12">
+                            <h2>Carrito</h2>
+                            <!-- Elementos del carrito -->
+                            <ul id="carrito" class="list-group d-flex"></ul>
+                            <hr>
+                            <!-- Precio total -->
+                            <p class="text-right">Total: ₡<span id="total"></span></p>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <button id="showCart" class="btn btn-primary">Mostrar / Ocultar Carrito</button>
+                                </div>
+                            </div>
+                            <div id="carr">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="producto_formulario">
+                    <div Class="title">
+                        <div>
+                            <h2>Productos disponibles bodega</h2>
+                        </div>
+                    </div>
+                    <!--<div class="imgform">
+                        <img src="Imagenes/Contact Us/Contact-US.jpg" alt="Contact Label";>
+                    </div> 
+                    <div>  
+                        <form class="formcli">
+                            <fieldset>
+                                    <div>
+                                        <label for="name">Name:</label><br />
+                                        <input type="text" placeholder="Enter your name" name="name" id="name"><br />
+                                    </div>
+                                    <div>
+                                        <label for="phone">Phone: </label><br />
+                                        <input type="tel" placeholder="Enter your phone" name="phone" id="phone"><br />
+                                    </div>
+                                    <div>
+                                        <label for="email">Email: </label><br />
+                                        <input type="email" placeholder="Enter your email" name="email" id="email"><br />
+                                    </div>
+                                    <div>
+                                    <label for="subject">Subject</label><br />
+                                    <textarea type="text" placeholder="Subject" name="Subject" id="Subject"> </textarea><br />
+                                    </div>
+                                <input type="button" value="Send">
+                            </fieldset>
+                        </form>
+                    </div>-->
+                </section>
+                <section id="product">
+        
+                </section>
             </div>
-        </section>
-        <section class="producto_formulario">
-            <!--<div class="imgform">
-                <img src="Imagenes/Contact Us/Contact-US.jpg" alt="Contact Label";>
-            </div> 
-            <div>  
-                <form class="formcli">
-                    <fieldset>
-                            <div>
-                                <label for="name">Name:</label><br />
-                                <input type="text" placeholder="Enter your name" name="name" id="name"><br />
-                            </div>
-                            <div>
-                                <label for="phone">Phone: </label><br />
-                                <input type="tel" placeholder="Enter your phone" name="phone" id="phone"><br />
-                            </div>
-                            <div>
-                                <label for="email">Email: </label><br />
-                                <input type="email" placeholder="Enter your email" name="email" id="email"><br />
-                            </div>
-                            <div>
-                            <label for="subject">Subject</label><br />
-                            <textarea type="text" placeholder="Subject" name="Subject" id="Subject"> </textarea><br />
-                            </div>
-                        <input type="button" value="Send">
-                    </fieldset>
-                </form>
-            </div>-->
-        </section>
-        <section id="product">
-
-        </section>
-        <footer>
-            <section>
-                <div class="important-links">
-                    <h2>Important Links</h2>
+        </main>
+        <footer class="py-5">
+            <div class="container">
+                <section>
+                    <div class="important-links">
+                        <h2>Important Links</h2>
+                            <ul>
+                                <li>
+                                    <a href="">terms and conditions</a>
+                                </li>
+                                <li>
+                                    <a href="">Schedule</a>
+                                </li>
+                                <li>
+                                    <a href="">How to place an order </a>
+                                </li>
+                                <li>
+                                    <a href="">Refund or refund</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div Class="cont-contact-links">
+                        <h2>Contact Us</h2>
                         <ul>
-                            <li>
-                                <a href="">terms and conditions</a>
-                            </li>
-                            <li>
-                                <a href="">Schedule</a>
-                            </li>
-                            <li>
-                                <a href="">How to place an order </a>
-                            </li>
-                            <li>
-                                <a href="">Refund or refund</a>
-                            </li>
+                            <li><h3 class="fs-4">Horario de atención: Lunes a Viernes 7:30am a 5:00pm</h3></li>
+                            <li><a href=""><i class="fa-solid fa-phone-volume" style="padding-right: 5px;"></i>(+506)88888888</a></li>
+                            <li><a href=""><i class="fa-solid fa-envelope" style="padding-right: 5px;"></i>pedidos@loremipsum.com</a></li>
+                            <li><a href=""><i class="fa-solid fa-location-dot"style="padding-right: 5px;"></i>Go to Google Maps</a></li>
                         </ul>
-                </div>
-                <div Class="cont-contact-links">
-                    <h2>Contact Us</h2>
-                    <ul>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-                    <p></p>
-                </div>
-            </section>
+                    </div>
+                </section>
+            </div>
         </footer>
         <script src="js/fetch_product.js"></script>
         <script src="js/cart.js"></script>
+        <script>
+           const ResponsiveCart = document.getElementById('showCart');
+           const cartList = document.getElementById('carrito');
+           function visibleCart(event){
+                if (cartList.classList.contains('d-flex')){
+                    console.log('si contiene');
+                    cartList.classList.remove('d-flex');
+                    cartList.classList.add('d-none');
+                }else{
+                    cartList.classList.remove('d-none');
+                    cartList.classList.add('d-flex');
+                };
+           }
+           ResponsiveCart.addEventListener('click', visibleCart);
+        </script>
     </body>
 
 </html>

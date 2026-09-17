@@ -5,16 +5,22 @@
 //Beige: #EBE65E
 //Terracota: #D4804A
 */
+*{
+    transition: all 0.3s ease-in;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-    background-color: #34495e;
+    background-color: #313131;
     color: #240e10; font-family: Arial, sans-serif;
 }
 
 header{
 	width: 100%;
-	height: 100px;
+	height: auto;
+    max-height: 120px;
+    background: linear-gradient(90deg,#3634b4, #6C6AF4, #706fd7 );
 	background-color: #6C6AF4;
 	margin: 0;
 	padding: 0;
@@ -83,9 +89,10 @@ header{
 
 /*/-==Start Products==-/*/
 #product {
-    width: 800px; height: auto; border: 1px solid #0084ff;
+    height: auto; border: 1px solid #0084ff;
     display: flex; flex-wrap: wrap; flex-direction: row;
-    margin: 0 auto; padding: 25px 0;
+    margin: 0 auto; padding: 25px 0; column-gap: 20px;
+    row-gap: 20px;
 }
 /*/-==End Menu Products==-/*/
 
@@ -95,6 +102,7 @@ header{
     margin: 5px auto; padding: 10px; border: 1px #6C6AF4 solid;
     background-color: #0749ff56; border-radius: 25px; 
     display: flex; flex-wrap: wrap; flex-direction: row; 
+    box-shadow: 0 0 10px #fff4;
 }
 
 .cont-img-product-tn{
@@ -107,7 +115,14 @@ header{
 .cont-inf-product-tn{
     padding-left: 5px;
 }
-
+.cont-inf-product-tn ul, .cont-inf-product-bio ul{
+    padding-left: 10px;
+    margin:5px 0;
+}
+.cont-inf-product-tn ul li, .cont-inf-product-bio ul li{
+    list-style: none;
+    padding-left: 10px;
+}
 .content-product-bio {
     margin: 5px auto; padding: 10px; border: 1px #6C6AF4 solid;
     background-color: #8101bd56; border-radius: 25px; 
@@ -134,19 +149,20 @@ header{
     width: auto; height: auto; 
     align-items: center; margin: 0 auto;
 }
-
+.important-links ul li, .cont-contact-links ul li {
+    list-style: none;
+}
 footer {
     margin: auto;
+    max-height: fit-content;
+    background-color: #034050;
+    color: whitesmoke;
 }
 
-footer > section {
-    background-color: #034050; width: 100%; height: auto;
-    color: whitesmoke; display: flex; flex-direction: row;
-    justify-content: center; align-items: center;
+header nav a, footer a {
+    color:#f5f5f5;
 }
-a {
-    color:#f5f5f5
-}
+
 a:hover {
     color: lawngreen;
 }
@@ -157,7 +173,6 @@ a:hover {
 
 /*
 /////Realizado por LuisGmom, plantillas hechas sin diseño responsive
-////sin logica de JS solo con estilos de CSS
 */
 
 
@@ -341,10 +356,20 @@ a:hover {
 }
 /*/////////////////ABOUT US//////////////////////
 ////////////////////////////////////////////////*/
-footer > section {
-    position: bottom; background-color: #034050; width: 100%; height: 200px;
+footer .container > section {
+    position: bottom; width: 100%;
     color: whitesmoke;
-    display: grid; grid-template-columns: 40% 20% 20% 20%;
+    display: grid; grid-template-columns: 2fr 2fr ;
+}
+@media (max-width:991px){
+    footer .container > section {
+        grid-template-columns: 1fr ;
+        
+}
+    .important-links, .cont-contact-links{
+    align-items: none;
+    margin: 0 0;
+}
 }
 a {
     color:#f5f5f5
@@ -353,6 +378,3 @@ a:hover {
     color: lawngreen;
 }
 
-@media screen and(max-width: 1024) {
-    
-}

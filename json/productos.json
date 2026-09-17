@@ -1,10 +1,10 @@
 {
-    "Productos":"Productos Macrobioticos",
-    "Categoria":"Phytos",
-    "TotalNatural":[
+    "Productos":"Productos tecnologicos",
+    "Categoria":"Electronicos",
+    "TecnologiaX":[
             {
         "id":"1001",
-        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "image":"https://w7.pngwing.com/pngs/115/746/png-transparent-redmi-note-5-4g-xiaomi-redmi-smartphone-smartphone-gadget-electronics-mobile-phone.png",
         "marca":"Xiaomy",
         "modelo":"Redmi",
         "precio":"₡ 12000",
@@ -12,7 +12,7 @@
         },
             {
         "id":"1002",
-        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "image":"https://w7.pngwing.com/pngs/115/746/png-transparent-redmi-note-5-4g-xiaomi-redmi-smartphone-smartphone-gadget-electronics-mobile-phone.png",
         "marca":"Xiaomy",
         "modelo":"Redmi",
         "precio":"₡ 12000",
@@ -20,7 +20,7 @@
         },
             {
         "id":"1003",
-        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "image":"https://w7.pngwing.com/pngs/115/746/png-transparent-redmi-note-5-4g-xiaomi-redmi-smartphone-smartphone-gadget-electronics-mobile-phone.png",
         "marca":"Xiaomy",
         "modelo":"Redmi",
         "precio":"₡ 12000",
@@ -28,7 +28,7 @@
         },
             {
         "id":"1004",
-        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "image":"https://w7.pngwing.com/pngs/115/746/png-transparent-redmi-note-5-4g-xiaomi-redmi-smartphone-smartphone-gadget-electronics-mobile-phone.png",
         "marca":"Xiaomy",
         "modelo":"Redmi",
         "precio":"₡ 12000",
@@ -36,7 +36,7 @@
         },
             {
         "id":"1005",
-        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "image":"https://w7.pngwing.com/pngs/115/746/png-transparent-redmi-note-5-4g-xiaomi-redmi-smartphone-smartphone-gadget-electronics-mobile-phone.png",
         "marca":"Xiaomy",
         "modelo":"Redmi",
         "precio":"₡ 12000",
@@ -44,14 +44,14 @@
         },
             {
         "id":"1006",
-        "image":"https://th.bing.com/th/id/R.034d2e323046c11b777bbedfb9911e01?rik=x7aEjyq0n9UkVg&pid=ImgRaw&r=0",
+        "image":"https://w7.pngwing.com/pngs/115/746/png-transparent-redmi-note-5-4g-xiaomi-redmi-smartphone-smartphone-gadget-electronics-mobile-phone.png",
         "marca":"Xiaomy",
         "modelo":"Redmi",
         "precio":"₡ 12000",
         "color":"Negro/Azul/Verde"
         }
     ],
-    "BioActive":[
+    "TecnologiaS":[
                 {
             "id":"1101",
             "image":"https://th.bing.com/th/id/OIP.CJH2zrnhzqd44G6_YgtaBwHaHa?pid=ImgDet&rs=1",
